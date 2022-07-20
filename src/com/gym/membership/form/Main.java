@@ -8,6 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         Person person = new Person("Mr", "John", "Doe", "fake@gmail.com", "0123456789", "123 Main St", "London", "SW1 1AA", LocalDate.parse("1980-01-01"), false, true);
+//        Person person = new Person("Mr", "John", "Doe", "fake@gmail.com", "0123456789", "123 Main St", "London", "SW1 1AA", LocalDate.parse("1980-01-01"), true, false);
         Payment payment = new Payment(BigDecimal.valueOf(100.00), LocalDate.parse("2022-01-01"), LocalDate.parse("2022-01-01"));
         // Create a new membership of person and with the payment method
         Membership membership = new Membership(person, payment);
